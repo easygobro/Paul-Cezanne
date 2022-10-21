@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel&family=Nabla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*
+ * Artsteps iframe and top heading
+ */
+
+h2 {
+  font-size: 50px;
+  border-style: groove;
+  border-color: #1a555c;
+  color: #d6a400;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Martel", serif;
+}
+
+section {
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+iframe {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+h4 {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 45px;
+  border-style: inset;
+  border-color: #1a555c;
+  color: #d6a400;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Martel", serif;
+}
+
+.zoom {
+  transition: transform 0.2s; 
+}
+
+.zoom:hover {
+  transform: scale(
+    1.1
+  ); 
+}
+
+/*
+ * Gallery css
+ */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

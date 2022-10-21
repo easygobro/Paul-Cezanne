@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel&family=Nabla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ * Html, body
+ */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #0b2528;
+  color: white;
+}
+
+/*
+ * Navigation Bar
+ */
+#navigation-container {
+  background-color: #1a555c;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 29px;
+  font-weight: bold;
+  font-family: "Martel", serif;
+}
+nav h1 span {
+  color: #ffc400;
+}
+
+nav li {
+  display: inline;
+  font-family: "Martel", serif;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 22px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Martel", serif;
+}
+li #item {
+  color: #ffc400;
+}
+
+/*
+ * Hero img and Sidebar
+ */
+
+.hero {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+small {
+  display: flex;
+  color: #8c0f24;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Martel", serif;
+  justify-content: center;
+}
+
+.left {
+  height: auto;
+  float: left;
+  padding-right: 5%;
+}
+
+.right {
+  float: right;
+  height: auto;
+  text-align: center;
+  
+}
+.right p {
+  padding-top: 5%;
+  font-size: 22px;
+  color: #d6a400;
+  text-align: center;
+}
+
+.left img {
+  border-radius: 35%;
+  padding-top: 10px;
+  box-shadow: 4px 4px 4px 4px rgb(0,0,0,.1);
+}
+
+aside {
+  width: 650px;
+  height: 300px;
+  margin-top: 50px;
+  background-color: #1a555c;
+  border-radius: 5%;
+  box-shadow: 4px 4px 4px 4px rgb(0,0,0,.1);
+}
+
+/*Responsive layout*/
+@media screen and (max-width: 800px) {
+  aside {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #1a555c;
+    border-radius: 5%;
+  }
+
+  .hero {
+    height: auto;
+    width: 100%;
+    padding-left: 5%;
+    justify-content: center;
+  }
+  .left {
+    width: 100%;
+    height: 300px;
+    float: none;
+  }
+  .right {
+    float: none;
+    width: 100%;
+    height: 300px;
+    text-align: left;
+  }
+  .right p {
+    font-size: 16px;
+    width: 300px;
+    padding-top: 5%;
+    color: #d6a400;
+    text-align: center;
+  }
+}
+
+
